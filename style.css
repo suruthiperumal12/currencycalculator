@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgb(162,23,147);
+background: radial-gradient(circle, rgba(162,23,147,1) 0%, rgba(174,197,236,1) 0%, rgba(201,174,238,1) 55%, rgba(148,187,233,1) 100%);
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-top: 8%;
+    background-image: url('/images/currency.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    border: solid darkcyan 1px;
+    box-shadow: 0 0 10px rgba(1, 92, 95, 0.1);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+.left-box,
+.rightbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60vh;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+input {
+    background: white;
+    line-height: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px darkcyan;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="number"] {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+input::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+select {
+    background: darkcyan;
+    line-height: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(114, 153, 153);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+select:focus {
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    background: rgb(2, 122, 76);
+    box-shadow: 0 0 10px rgb(114, 153, 153);
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button:hover {
+    background: rgb(1, 49, 1);
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom: 20px;
+
+}
+
+.error {
+    display: none;
+    color: rgb(172, 3, 3);
+    text-align: center;
+}
+select {
+    background: darkcyan;
+    line-height: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(114, 153, 153);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    appearance: none;
+    background-position: right 10px top 50%, 0 0;
+    background-size: 10px auto, 100%;
+}
+
+select option {
+    background: white;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+select option img {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 15%;
+    }
+
+    input,
+    select,
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
