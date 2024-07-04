@@ -154,7 +154,6 @@ select option img {
         /* margin: 30px; Adjust margin for surrounding spacing */
         margin: 30px auto; /* Center container horizontally */
         max-width: 90%; /* Limit container width for responsive design */
-        margin-top: 10%;
     }
 
     input,
