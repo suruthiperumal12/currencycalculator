@@ -151,6 +151,8 @@ select option img {
 @media (max-width: 768px) {
     .container {
         margin-top: 15%;
+        width:80%;
+        height: auto;
     }
 
     input,
