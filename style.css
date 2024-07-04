@@ -150,7 +150,8 @@ select option img {
 
 @media (max-width: 768px) {
     .container {
-        margin: 15%;
+        padding: 30px; /* Adjust padding for inner spacing */
+        margin: 15px; /* Adjust margin for surrounding spacing */
     }
 
     input,
