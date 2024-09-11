@@ -1,165 +1,106 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: rgb(162,23,147);
-background: radial-gradient(circle, rgba(162,23,147,1) 0%, rgba(174,197,236,1) 0%, rgba(201,174,238,1) 55%, rgba(148,187,233,1) 100%);
-
-}
-
-.main {
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1), rgba(76, 161, 175, 1));
+    color: #333;
+    margin: 0;
 }
 
 .container {
-    margin-top: 8%;
-    background-image: url('/images/currency.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
-    border: solid darkcyan 1px;
-    box-shadow: 0 0 10px rgba(1, 92, 95, 0.1);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 40px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 60vh;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .left-box,
 .rightbox {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 60vh;
+    margin-bottom: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: white;
-}
-
-input {
-    background: white;
-    line-height: 20px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 10px darkcyan;
-}
-
-input:focus {
-    outline: none;
-}
-
-input[type="number"] {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-input::placeholder{
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
+input,
 select {
-    background: darkcyan;
-    line-height: 20px;
     padding: 10px;
-    border: none;
+    font-size: 16px;
     border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(114, 153, 153);
+    border: none;
+    background: #f1f1f1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
 }
 
+input:focus,
 select:focus {
     outline: none;
+    background: #e8e8e8;
+    box-shadow: 0 0 10px rgba(0, 128, 128, 0.5);
 }
 
 button {
-    padding: 10px;
-    background: rgb(2, 122, 76);
-    box-shadow: 0 0 10px rgb(114, 153, 153);
-    margin-top: 10px;
-    border: none;
-    border-radius: 15px;
+    padding: 12px 20px;
+    background: #028a5c;
     color: white;
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 128, 128, 0.3);
 }
 
 button:hover {
-    background: rgb(1, 49, 1);
-    outline: none;
-    cursor: pointer;
-    font-size: 15px;
-    margin-bottom: 20px;
+    background: #026a49;
+    transform: translateY(-2px);
+}
 
+button:active {
+    transform: translateY(0);
 }
 
 .error {
-    display: none;
     color: rgb(172, 3, 3);
     text-align: center;
-}
-select {
-    background: darkcyan;
-    line-height: 20px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(114, 153, 153);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    appearance: none;
-    background-position: right 10px top 50%, 0 0;
-    background-size: 10px auto, 100%;
-}
-
-select option {
-    background: white;
-    color: black;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-select option img {
-    display: inline-block;
-    margin-right: 10px;
+    display: none;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
     .container {
-        padding: 15px; /* Adjust padding for inner spacing */
-        /* margin: 30px; Adjust margin for surrounding spacing */
-        margin: 30px auto; /* Center container horizontally */
-        max-width: 90%; /* Limit container width for responsive design */
+        padding: 20px;
+        width: 90%;
     }
 
-    input,
-    select,
+    h1 {
+        font-size: 24px;
+    }
+
     button {
-        padding: 8px;
         font-size: 14px;
+        padding: 10px;
     }
 }

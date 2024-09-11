@@ -9,7 +9,7 @@ fetch("https://api.frankfurter.app/currencies")
   .then((response) => displaydropdown(response));
 
 function displaydropdown(response) {
-  console.log(Object.entries(data)[0][0]);
+  console.log(Object.entries(response));
   var country = Object.entries(response);
   for (let i = 0; i < country.length; i++) {
     let option = `<option value="${country[i][0]}">${country[i][1]}</option>`;
